@@ -70,7 +70,7 @@ namespace Demo1
 
                 endpoints.MapControllerRoute(
                name: "r3",
-               pattern: "/user/info/{id}",
+               pattern: "/user/info/{id:int}",
                defaults: new { controller = "account", action = "getuserinfo" }
                );
 
